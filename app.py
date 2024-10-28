@@ -99,7 +99,7 @@ Thank you for visiting my Web App, and feel free to connect with me!
 
 # Contact page function
 def show_contact():
-    st.title('📞 Contact Me')
+    st.title('Contact Me')
     st.write("""
         Feel free to reach out through any of the following platforms:
     """)
@@ -108,7 +108,7 @@ def show_contact():
     st.write(
         '<div style="display: flex; align-items: center;">'
         '<img src="https://img.icons8.com/material-outlined/24/000000/github.png" class="icon"/>' 
-        '<a href="https://github.com/your-github-username">GitHub</a>'
+        '<a href="https://github.com/Anirudh-sys">GitHub</a>'
         '</div>',
         unsafe_allow_html=True
     )
@@ -116,7 +116,7 @@ def show_contact():
     st.write(
         '<div style="display: flex; align-items: center;">'
         '<img src="https://img.icons8.com/material-outlined/24/000000/linkedin.png" class="icon"/>' 
-        '<a href="https://linkedin.com/in/your-linkedin-username">LinkedIn</a>'
+        '<a href="https://linkedin.com/in/anirudh-r-4b5038278">LinkedIn</a>'
         '</div>',
         unsafe_allow_html=True
     )
@@ -156,17 +156,17 @@ def show_car_prediction():
                                                   'Jaguar', 'Land', 'MG', 'Volvo', 'Daewoo', 'Kia', 'Fiat', 'Force',
                                                   'Ambassador', 'Ashok', 'Isuzu', 'Opel'])
         year = st.slider('Year', min_value=1990, max_value=2024, step=1)
-        km_driven = st.number_input('Kilometers Driven', min_value=0, step=100, help="Total kilometers the car has been driven")
-        fuel = st.selectbox('Fuel Type', ['Choose'] + ['Diesel', 'Petrol', 'LPG', 'CNG'])
-        mileage = st.number_input('Mileage', min_value=0.0, step=0.1, help="Fuel efficiency in kilometers per liter")
+        km_driven = st.number_input('Kilometers Driven', min_value=0, step=5000, help="Total kilometers the car has been driven")
+        fuel = st.selectbox('Fuel Type', ['Choose'] + ['Diesel', 'Petrol', 'CNG'])
+        mileage = st.number_input('Mileage', min_value=0.0, step=1.0, help="Fuel efficiency in kilometers per liter")
 
     with col2:
         seller_type = st.selectbox('Seller Type', ['Choose'] + ['Individual', 'Dealer', 'Trustmark Dealer'])
         transmission = st.selectbox('Transmission', ['Choose'] + ['Manual', 'Automatic'])
         owner = st.selectbox('Owner', ['Choose'] + ['First Owner', 'Second Owner', 'Third Owner', 'Fourth & Above Owner', 'Test Drive Car'])
-        engine = st.number_input('Engine CC', min_value=0, step=100)
-        max_power = st.number_input('Max Power', min_value=0.0, step=0.1)
-        seats = st.number_input('Seats', min_value=1, step=1)
+        engine = st.slider('Engine CC', min_value=500,max_value=4000, step=1)
+        max_power = st.number_input('Max Power', min_value=0.0, step=1.0)
+        seats = st.number_input('Seats', min_value=2, step=1)
 
     # Create a dictionary from user inputs
     features = {
