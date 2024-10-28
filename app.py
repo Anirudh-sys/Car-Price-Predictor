@@ -133,7 +133,7 @@ def show_contact():
     st.write(
         '<div style="display: flex; align-items: center;">'
         '<img src="https://img.icons8.com/material-outlined/24/000000/portfolio.png" class="icon"/>' 
-        '<a href="https://your-portfolio-link.com">Portfolio</a>'
+        '<a href="https://sites.google.com/view/anirudhr-portfolio?usp=sharing">Portfolio</a>'
         '</div>',
         unsafe_allow_html=True
     )
