@@ -3,7 +3,7 @@
 Welcome to the **Car Price Predictor** repository! This project is a machine-learning-powered web application designed to provide price predictions for used cars based on various input features. The app leverages data-driven insights to assist users in estimating car prices accurately.
 
 ## 🚀 Live Demo
-Check out the live app here: [Car Price Predictor](https://car-price-predictor-anirudh.streamlit.app/)
+Check out the live app here: [Car Price Predictor](https://car-price-predictor-anirudhr.streamlit.app/)
 
 ## 🧠 How It Works
 The app uses a trained machine learning model to analyze input data about a car's specifications and predict its price. This is achieved by leveraging historical data on car prices and their respective features, applying a regression model for continuous price prediction.
